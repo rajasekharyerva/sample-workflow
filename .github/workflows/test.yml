@@ -33,7 +33,7 @@ jobs:
 
       # 4. Build & run tests
       - name: Run Tests
-        run: mvn clean test -B
+        run: mvn clean test
 
       # 5. Upload TestNG / JUnit XML reports for CI
       - name: Upload test results
