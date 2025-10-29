@@ -37,4 +37,7 @@ jobs:
 
       # 5. Upload TestNG / JUnit XML reports for CI
       - name: Upload test results
-        uses: actions/up
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: target/surefire-reports/*.xml
